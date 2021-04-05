@@ -1,0 +1,51 @@
+extends pug/layout.pug
+
+block variables
+  - let title = 'Вход';
+
+block content
+  .container
+    include pug/partials/header
+    include pug/partials/aside
+    include pug/partials/steps
+
+    .order-cover
+      include pug/partials/order-summary
+      .order-list
+        .order-item
+          .order-item__img
+            img(src="", alt="")
+          .order-item__info
+            .order-item__info-top
+              .order-item__name Chàmomile
+              .order-item__ammount 1
+              .order-item__price 300 ₽
+            .order-item__extra Helper, Доставка
+            .order-item__block
+              .order-item__block-title Состав
+              .order-item__block-text 25 пионов сорта ян флеминг
+            .order-item__block
+              .order-item__block-title Комментарий
+              .order-item__block-text Сборка разноуровневая, упаковка светлая
+            .order-item__block
+              .order-item__block-title Текст открытки
+              .order-item__block-text Цветы для моего руководителя, наставника, учителя, примера и доброго человека. С днём рождения Ирина Александровна!!! от Рубена.
+        .order-item
+          .order-item__img
+            img(src="", alt="")
+          .order-item__info
+            .order-item__info-top
+              .order-item__name Lola
+              .order-item__ammount 1
+              .order-item__price 400 ₽
+            .order-item__block
+              .order-item__block-title Состав
+              .order-item__block-text 25 пионов сорта ян флеминг
+            .order-item__block
+              .order-item__block-title Комментарий
+              .order-item__block-text Сборка разноуровневая, упаковка светлая
+            .order-item__block
+              .order-item__block-title Текст открытки
+              .order-item__block-text Цветы для моего руководителя, наставника, учителя, примера и доброго человека. С днём рождения Ирина Александровна!!! от Рубена.
+
+include pug/partials/modal

@@ -1,0 +1,98 @@
+.header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 48px;
+  padding: 40px 26px 20px 440px;
+  border-bottom: 1px solid $color-border-light;
+  height: 109px;
+  box-sizing: border-box;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: $color-white;
+
+  &__logo {
+    z-index: 1000;
+    position: fixed;
+    top: 51px;
+    left: 38px;
+  }
+
+  &__tabs-header {
+    @include list-reset;
+    display: flex;
+  }
+
+  &__tabs-item {
+    margin: 0 22px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-tab-color;
+    text-transform: uppercase;
+  }
+
+  &__account {
+    display: flex;
+    background-color: $color-very-light-grey;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    position: relative;
+
+    span {
+      display: inline-block;
+      margin: auto;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.41px;
+    color: #1F1F1F;
+    width: 299px;
+    top: 44px;
+    right: 0;
+    background-color: $color-white;
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 20px;
+    transition: opacity 0.2s;
+    opacity: 0;
+    pointer-events: none;
+
+    &.is-shown {
+      opacity: 1;
+      pointer-events: initial;
+    }
+
+    a {
+      display: block;
+    }
+
+    &-email {
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: 0.35px;
+      color: #A1A1A1;
+      margin-top: 6px;
+    }
+
+    &-password {
+      margin: 20px 0;
+      padding: 20px 0;
+      border-top: 1px solid rgba(#CCCCCC, 0.5);
+      border-bottom: 1px solid rgba(#CCCCCC, 0.5);
+    }
+  }
+}

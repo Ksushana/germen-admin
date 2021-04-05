@@ -1,0 +1,23 @@
+.button-black {
+  @include button-reset;
+  border-radius: 100px;
+  padding: 10px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-grey-dark;
+  height: 80px;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.35px;
+  color: $color-white;
+
+
+  &--inactive {
+    pointer-events: none;
+    background-color: $color-very-light-grey;
+  }
+}

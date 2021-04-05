@@ -1,0 +1,16 @@
+.note-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
+
+  &__text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: $color-grey-text;
+    letter-spacing: 0.41px;
+  }
+}

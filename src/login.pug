@@ -1,0 +1,17 @@
+extends pug/layout.pug
+
+block variables
+  - let title = 'Вход';
+
+block content
+  .container
+    .login
+      .login__logo
+        +svg("logo", "136", "33")
+      .login__title Вход
+      .login__form
+        form(action="post")
+          input.login__form-input(type="email")
+          input.login__form-input(type="password")
+          input.login__form-button.button-black(type="submit")
+        a.login__form-remind(href="") Забыли пароль?

@@ -1,0 +1,31 @@
+.circle-timer {
+  $size: 56px;
+  position: relative;
+  width: $size;
+  height: $size;
+
+  &__circle {
+    transform: scaleX(1);
+  }
+
+  &__circle-path {
+    stroke-width: 8px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    fill: none;
+    stroke: $color-black-text;
+  }
+
+  &__label {
+    position: absolute;
+    width: $size;
+    height: $size;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

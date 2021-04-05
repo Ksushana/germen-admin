@@ -1,0 +1,16 @@
+extends pug/layout.pug
+
+block variables
+  - let title = 'Вход';
+
+block content
+  .container
+    include pug/partials/header
+    include pug/partials/aside
+    include pug/partials/steps
+    .order-cover
+      .order-status
+        .order-status__img
+          +svg("bouquet", "100", "100")
+        .order-status__title №934013 готов
+        .order-status__text Передайте заказ курьеру

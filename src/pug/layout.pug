@@ -1,0 +1,30 @@
+include mixins
+
+block variables
+- let mainTitle = "Germen";
+
+doctype html
+html( lang="ru" )
+  head
+    meta( charset="UTF-8" )
+    title #{mainTitle} !{title && "| " + title}
+    meta( name="viewport" content="width=device-width, initial-scale=1.0" )
+    link( rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/SFProDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="stylesheet" href="css/style.min.css" )
+
+  body
+
+    main
+      .header__logo
+        +svg("logo", "135", "33")
+      block content
+
+      include pug/partials/modal
+
+
+
+    block scripts
+      script( src="js/script.min.js" )

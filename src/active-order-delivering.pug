@@ -1,0 +1,15 @@
+extends pug/layout.pug
+
+block variables
+  - let title = 'Вход';
+
+block content
+  .container
+    include pug/partials/header
+    include pug/partials/aside
+    include pug/partials/steps
+    .order-cover
+      .order-status
+        .order-status__img
+          +svg("car-big", "120", "78")
+        .order-status__title №934013 передан курьеру

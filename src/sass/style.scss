@@ -1,0 +1,24 @@
+/* Vendor */
+@import "vendor/normalize";
+@import "vendor/snap";
+@import "vendor/select";
+@import "vendor/modal";
+/* General */
+@import "general/variables";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/global";
+/* Blocks */
+@import "blocks/button";
+@import "blocks/login";
+@import "blocks/header";
+@import "blocks/note-block";
+@import "blocks/aside";
+@import "blocks/order";
+@import "blocks/timer";
+@import "blocks/order-cover";
+@import "blocks/order-summary";
+@import "blocks/order-item";
+@import "blocks/steps";
+@import "blocks/order-status";
+@import "blocks/modal-delete";

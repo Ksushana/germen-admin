@@ -1,0 +1,12 @@
+#deleteModal.modal.micromodal-slide(tabindex='-1' aria-hidden='true')
+  .modal__overlay(tabindex="-1" data-micromodal-close)
+    .modal__container.modal-delete(role="dialog" aria-modal="true" aria-labelledby="modal-del" )
+      .modal__header
+        h5.modal__header Отмена заказа: несколько позиций
+        button.modal__close(type='button' aria-label="Close modal" data-micromodal-close)
+          span(aria-hidden='true') &times;
+      .modal-body
+
+      .modal-footer
+        button.btn.btn-secondary(type='button' ) Отправить
+        button.btn.btn-primary.modal__close(type='button' aria-label="Close modal" data-micromodal-close) Отмена

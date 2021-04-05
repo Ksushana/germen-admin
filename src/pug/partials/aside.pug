@@ -1,0 +1,75 @@
+.aside
+  .aside__dropdown
+    select(name="orders" id="orders-select")
+      option( selected="selected") Новые заказы <span>14</span>
+      option Собранные <span>1</span>
+      option Отмененные <span>9</span>
+    +svg("arrow-down", "12", "7")
+  .aside__orders-list
+    .aside__order
+      .order.order--is-opened.snap-content
+        .order__title №934013
+        .order__note
+          +svg("clock", "18", "17")
+          | Собрать как можно скорее
+        .order__state
+          .order__in-process
+            .circle-timer(data-time-limit="180")
+      .order__cancel.snap-drawers
+        .snap-drawer.snap-drawer-right(data-toggle="modal" data-target="#deleteModal") Отменить
+    .aside__order
+      .order.snap-content
+        .order__title №934014
+        .order__note
+          +svg("clock", "18", "17")
+          | Собрать к 13:04
+        .order__state
+          .order__in-process
+            .circle-timer(data-time-limit="3000")
+      .order__cancel.snap-drawers
+        .snap-drawer.snap-drawer-right(data-toggle="modal" data-target="#deleteModal") Отменить
+
+    .aside__order
+      .order.snap-content
+        .order__title №934015
+        .order__note
+          +svg("clock", "18", "17")
+          | Собрать к 12:08
+        .order__state
+          .order__done
+            +svg("tick", "24", "22")
+      .order__cancel.snap-drawers
+        .snap-drawer.snap-drawer-right(data-toggle="modal" data-target="#deleteModal") Отменить
+    .aside__order
+      .order.snap-content
+        .order__title №934016
+        .order__note
+          +svg("clock", "18", "17")
+          | Собрать к 12:13
+        .order__state
+          .order__in-process
+            .circle-timer(data-time-limit="5000")
+      .order__cancel.snap-drawers
+        .snap-drawer.snap-drawer-right(data-toggle="modal" data-target="#deleteModal") Отменить
+    .aside__order
+      .order.snap-content
+        .order__title №934017
+        .order__note
+          +svg("clock", "18", "17")
+          | Собрать к 12:21
+        .order__state
+          .order__done
+            +svg("tick", "24", "22")
+      .order__cancel.snap-drawers
+        .snap-drawer.snap-drawer-right(data-toggle="modal" data-target="#deleteModal") Отменить
+    .aside__order
+      .order.snap-content
+        .order__title №934018
+        .order__note
+          +svg("clock", "18", "17")
+          | Собрать к 12:23
+        .order__state
+          .order__in-process
+            .circle-timer(data-time-limit="8000")
+      .order__cancel.snap-drawers
+        .snap-drawer.snap-drawer-right(data-toggle="modal" data-target="#deleteModal") Отменить
