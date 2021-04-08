@@ -1,6 +1,6 @@
 .order-item {
   display: flex;
-  padding: 25px 0 5px;
+  padding: 28px 0 5px;
   border-top: 1px solid #EBEBEB;
 
   &__img {
@@ -33,11 +33,21 @@
   }
 
   &__price {
-    margin-left: 180px;
+    margin-left: 195px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: right;
+    letter-spacing: 0.41px;
+  }
+
+  &__ammount {
+    font-size: 22px;
+line-height: 26px;
   }
 
   &__extra {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     font-size: 17px;
     line-height: 27px;
     color: $color-tab-color;

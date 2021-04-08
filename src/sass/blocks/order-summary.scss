@@ -2,14 +2,14 @@
   &__top {
     display: flex;
     padding-top: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
 
   &__bottom {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 
   &__label {
@@ -34,7 +34,11 @@
     font-size: 40px;
     line-height: 60px;
     letter-spacing: 0.41px;
+
     color: $color-black-text;
+    span.gray {
+      color: $color-tab-color;
+    }
   }
 
   &__block {
@@ -60,11 +64,10 @@
   }
 
   &__total-price  {
-    margin-left: auto;
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
-    text-align: right;
+    text-align: left;
     color: $color-black-text;
   }
 }
