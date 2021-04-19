@@ -3,10 +3,11 @@
   flex-direction: column;
   position: relative;
   border-radius: 20px;
-  padding: 21px 90px 21px 40px;
+  padding: 16px 65px 16px 16px;
   position: relative;
   width: 100%;
   background-color: $color-light-grey;
+  margin-left: 16px;
 
   &--is-opened {
     background-color: $color-white;
@@ -15,9 +16,10 @@
   &__note {
     display: flex;
     align-items: center;
-    font-size: 17px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 22px;
     color: $color-black-text;
+    letter-spacing: 0.26px;
 
     svg {
       margin-right: 8px;
@@ -26,20 +28,20 @@
 
   &__title {
     font-weight: 600;
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: 0.41px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
     color: $color-grey-dark;
-    margin-bottom: 9px;
+    margin-bottom: 4px;
   }
 
   &__state {
     position: absolute;
-    right: 25px;
-    width: 56px;
-    height: 56px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
     top: 50%;
-    margin-top: -28px;
+    margin-top: -23px;
 
 
   }
@@ -61,8 +63,8 @@
     width: 100%;
     box-sizing: border-box;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 24px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -70,14 +72,14 @@
   }
 
   &__cancel .snap-drawer {
-    width: 151px;
-    height: 102px;
+    width: 107px;
+    height: 80px;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     background-color: $color-pink;
     text-align: center;
-    letter-spacing: 0.0041em;
+    letter-spacing: 0.003em;
     color: $color-white;
     display: flex;
     justify-content: center;

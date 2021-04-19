@@ -2,8 +2,8 @@ document
     .querySelectorAll(`.order`)
     .forEach(element => new Snap({
       element: element,
-      maxPosition: 160,
-      minPosition: -160,
+      maxPosition: 123,
+      minPosition: -123,
       disable: 'left',
     })
   );

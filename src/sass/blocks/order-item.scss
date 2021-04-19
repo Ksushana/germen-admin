@@ -1,17 +1,17 @@
 .order-item {
   display: flex;
-  padding: 28px 0 5px;
+  padding: 26px 0 5px;
   border-top: 1px solid #EBEBEB;
 
   &__img {
-    width: 112px;
-    height: 128px;
-    margin-right: 30px;
+    width: 90px;
+    height: 100px;
+    margin-right: 20px;
 
     img {
       object-fit: cover;
       object-position: center;
-      border-radius: 8px;
+      border-radius: 6px;
       width: 100%;
       height: 100%;
     }
@@ -27,41 +27,42 @@
 
   &__name {
     font-weight: 600;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     margin-right: auto;
   }
 
   &__price {
-    margin-left: 195px;
-    font-size: 22px;
-    line-height: 26px;
+    margin-left: 145px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: right;
     letter-spacing: 0.41px;
   }
 
   &__ammount {
-    font-size: 22px;
-line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   &__extra {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: 17px;
-    line-height: 27px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 22px;
     color: $color-tab-color;
   }
 
   &__block {
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 27px;
-    margin: 10px 0 20px;
-    max-width: 488px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 0 16px;
+    max-width: 380px;
   }
 
   &__block-title {
     font-weight: 600;
   }
+
 }

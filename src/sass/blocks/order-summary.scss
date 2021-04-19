@@ -1,28 +1,28 @@
 .order-summary {
   &__top {
     display: flex;
-    padding-top: 12px;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
   }
 
   &__bottom {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 
   &__label {
     font-weight: 500;
-    font-size: 17px;
-    line-height: 52px;
-    letter-spacing: 0.41px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
     color: $color-tab-color;
+    margin-bottom: 7px;
 
     &--green {
       font-weight: 600;
-      font-size: 22px;
-      line-height: 52px;
+      font-size: 16px;
+      line-height: 24px;
       text-align: right;
 
       color: #84CC3D;
@@ -31,9 +31,9 @@
 
   &__data {
     font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
-    letter-spacing: 0.41px;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.3px;
 
     color: $color-black-text;
     span.gray {
@@ -42,7 +42,7 @@
   }
 
   &__block {
-    padding-right: 68px;
+    padding-right: 56px;
 
     &:last-child {
       padding-right: 0;
@@ -55,18 +55,18 @@
     border-radius: 100px;
     max-width: 590px;
     margin-right: 60px;
-    padding: 13px;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 20px;
+    padding: 7px 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
 
     color: $color-grey-dark;
   }
 
   &__total-price  {
     font-weight: 600;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: left;
     color: $color-black-text;
   }
