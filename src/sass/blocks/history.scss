@@ -1,17 +1,18 @@
 .history {
-  padding: 167px 40px 40px;
+  padding: 122px 32px 40px;
   width: 100%;
 
   &__top {
     display: flex;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
+    flex-wrap: wrap;
   }
 
   &__title {
     font-weight: 600;
-    font-size: 34px;
-    line-height: 26px;
+    font-size: 24px;
+    line-height: 32px;
     letter-spacing: 0.41px;
     margin: 0;
     margin-right: auto;
@@ -19,20 +20,22 @@
 
   &__search {
     position: relative;
-    width: 264px;
-    height: 48px;
+    width: 304px;
+    height: 40px;
     margin-right: 32px;
+    font-size: 14px;
+    line-height: 22px;
 
     svg {
       position: absolute;
       left: 16px;
-      top: 15px;
+      top: 9px;
     }
 
     input {
       width: 100%;
       height: 100%;
-      padding: 12px 12px 12px 50px;
+      padding: 12px 14px 12px 50px;
       border: 1px solid #EBEBEB;
       box-sizing: border-box;
       border-radius: 8px;
@@ -45,25 +48,44 @@
         opacity: 0;
       }
 
+      &::placeholder {
+        color: #A1A1A1;
+      }
+
     }
-
-
   }
 
   &__filter {
     button {
       @include button-reset;
-      width: 142px;
-      height: 48px;
-      border: 1px solid #EBEBEB;
+      width: 121px;
+      height: 40px;
+      background-color: #EBEBEB;
       box-sizing: border-box;
       border-radius: 8px;
       display: flex;
-    align-items: center;
-    justify-content: center;
-
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      line-height: 22px;
       svg {
         margin-right: 12px;
+        width: 20px;
+        height: 22px;
+      }
+
+      span {
+        width: 20px;
+        height: 20px;
+        background: #3E3E3E;
+        border-radius: 50%;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 13px;
+        display: inline-block;
       }
     }
   }
@@ -73,7 +95,7 @@
     border-top: 1px solid #EBEBEB;
 
     &--inner {
-      padding-left: 176px;
+      padding-left: 166px;
       width: 100%;
 
       tr:first-child td {
@@ -82,25 +104,24 @@
 
       td.td {
         border-bottom: 1px solid #EBEBEB;
-        padding: 27px 0;
+        padding: 7px 0;
         vertical-align: top;
       }
     }
 
     .thead {
       display: flex;
-      height: 64px;
+      height: 40px;
       align-items: center;
       padding-right: 10px;
     }
 
     .th {
       padding-right: 20px;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 20px;
-
-      color: #A1A1A1;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 40px;
+      color: #3E3E3E;
     }
 
     .tr {
@@ -118,10 +139,10 @@
     }
 
     .td {
-      min-height: 80px;
+      min-height: 40px;
       font-weight: normal;
-      font-size: 22px;
-      line-height: 80px;
+      font-size: 14px;
+      line-height: 40px;
       padding: 0;
       padding-right: 20px;
       &--arrow{
@@ -138,7 +159,7 @@
   }
 
   &__table-order {
-    width: 176px;
+    width: 165px;
   }
 
   &__table-date {
@@ -146,15 +167,15 @@
   }
 
   &__table-time {
-    width: 103px;
+    width: 145px;
   }
 
   &__table-sum {
-    width: 166px;
+    width: 145px;
   }
 
   &__table-sum--inner {
-    width: 170px;
+    width: 155px;
   }
 
   &__table-composition {
@@ -165,25 +186,25 @@
       span {
         display: block;
         font-weight: normal;
-        font-size: 17px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 19px;
         color: #A1A1A1;
+        padding-top: 5px;
       }
     }
   }
 
   &__table-ammont {
-    width: 272px;
+    width: 310px;
   }
 
   &__table-notes,
   &__table-comment {
     display: flex;
-    margin-left: 176px;
-
-    font-size: 22px;
-    line-height: 26px;
-    padding: 26px 0;
+    margin-left: 166px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0;
   }
 
   &__table-comment {

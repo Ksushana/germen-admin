@@ -20907,6 +20907,9 @@ var widgetsTooltip = $.ui.tooltip;
   };
 })();
 
+$('.history__filter-btn').on('click', function (e) {
+  $('.filters').toggleClass('is-shown');
+});
 'use strict';
 
 // (function () {

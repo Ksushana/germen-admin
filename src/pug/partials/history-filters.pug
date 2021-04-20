@@ -6,24 +6,24 @@
       +svg("search", "19", "22")
     .history__filter
       button.history__filter-btn( type="button")
-        +svg("filter", "20", "22")
+        span 2
         | Фильтры
     .history__filters.filters
       .filters__block.filters__block--date
         label(for="filterDate") Дата заказа
-        input(type="date" id="filterDate" placeholder="Выберите дату" value="" onChange="this.setAttribute('value', this.value)")
+        input(type="date" id="filterDate" placeholder="Выберите дату" value="2018-07-22" onChange="this.setAttribute('value', this.value)")
       .filters__block.filters__block--select
         label(for="filterStatus") Статус
-        select(type="date" id="filterStatus")
+        select(type="date" id="filterStatus" required)
           option(value="") Выберите статус
-          option(value="2") 2
-          option(value="3") 3
+          option(value="1") Создан
+          option(value="2" selected) Отменен
 
       .filters__block
         label(for="filterStatus") Сумма
         .filters__inputs
-          input(type="number" placeholder="от" min="0")
-          input(type="number" placeholder="до" min="0")
+          input(type="number" placeholder="от" min="0" value="100")
+          input(type="number" placeholder="до" min="0" value="500")
 
   .history__table
 

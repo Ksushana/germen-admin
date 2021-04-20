@@ -40,18 +40,16 @@
           <div class="history__search"><input type="search" placeholder="Поиск"><svg width="19" height="22" aria-hidden="true">
               <use xlink:href="img/sprite.svg#search"></use>
             </svg></div>
-          <div class="history__filter"><button class="history__filter-btn" type="button"><svg width="20" height="22" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#filter"></use>
-              </svg>Фильтры</button></div>
+          <div class="history__filter"><button class="history__filter-btn" type="button"><span>2</span>Фильтры</button></div>
           <div class="history__filters filters">
-            <div class="filters__block filters__block--date"><label for="filterDate">Дата заказа</label><input type="date" id="filterDate" placeholder="Выберите дату" value="" onChange="this.setAttribute('value', this.value)"></div>
-            <div class="filters__block filters__block--select"><label for="filterStatus">Статус</label><select type="date" id="filterStatus">
+            <div class="filters__block filters__block--date"><label for="filterDate">Дата заказа</label><input type="date" id="filterDate" placeholder="Выберите дату" value="2018-07-22" onChange="this.setAttribute('value', this.value)"></div>
+            <div class="filters__block filters__block--select"><label for="filterStatus">Статус</label><select type="date" id="filterStatus" required>
                 <option value="">Выберите статус</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="1">Создан</option>
+                <option value="2" selected>Отменен</option>
               </select></div>
             <div class="filters__block"><label for="filterStatus">Сумма</label>
-              <div class="filters__inputs"><input type="number" placeholder="от" min="0"><input type="number" placeholder="до" min="0"></div>
+              <div class="filters__inputs"><input type="number" placeholder="от" min="0" value="100"><input type="number" placeholder="до" min="0" value="500"></div>
             </div>
           </div>
         </div>
