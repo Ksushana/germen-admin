@@ -682,7 +682,7 @@ button.ui-button::-moz-focus-inner {
 .ui-selectmenu-menu {
 	padding: 0;
 	margin: 0;
-	position: fixed;
+	position: fixed !important;
 	top: 0;
 	left: 0;
 	display: none;
