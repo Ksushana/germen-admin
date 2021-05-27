@@ -1,0 +1,55 @@
+.courier-top {
+  &__order {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__order-number {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    margin-right: 14px;
+  }
+
+  &__order-status {
+    padding: 2px 8px;
+    background: #F6F6F6;
+    border-radius: 4px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__delivery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+  }
+
+  &__delivery-note {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.30735px;
+    color: #000000;
+    opacity: 0.4;
+    margin-bottom: 8px;
+  }
+
+  &__delivery-data {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+  }
+
+  &__note {
+    background: #F6F6F6;
+    border-radius: 12px;
+    padding: 8px 10px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #333333;
+  }
+}

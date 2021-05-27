@@ -1,0 +1,12 @@
+extends pug/layout.pug
+
+block variables
+  - let title = 'Вход';
+  - let isMobile = true;
+
+
+block content
+  .container
+    include pug/partials/header-mobile
+    include pug/partials/courier-top
+    include pug/partials/courier-tabs

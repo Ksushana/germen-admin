@@ -1,0 +1,53 @@
+.courier-tabs {
+  &__header {
+
+    padding: 0 16px 20px;
+    border-bottom: 1px solid rgba(#000000, 0.1);
+  }
+
+  &__header-inner {
+    background: #F6F6F6;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 40px;
+    position: relative;
+
+  }
+
+  &__chosen {
+      position: absolute;
+      background-color: #ffffff;
+      border-radius: 6px;
+      width: 50%;
+      height: 36px;
+      top: 2px;
+      left: 2px;
+      transition: left 0.3s;
+  }
+
+  &__link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+    z-index: 111;
+
+    &:active,
+    &:hover {
+      text-decoration: none;
+      color: #333333;
+    }
+
+    &.js-tabs__title-active + .courier-tabs__chosen {
+      left: 49%;
+    }
+  }
+}

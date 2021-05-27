@@ -1,14 +1,14 @@
 'use strict';
 
-// (function () {
-//   var header = document.querySelector('.header__tabs');
-//   if (!header) {
-//     return;
-//   }
+(function () {
+  var header = document.querySelector('.courier-tabs');
+  if (!header) {
+    return;
+  }
 
-//   var tabs = new Tabs({
-//     elem: "tabs",
-//     open: 0
-//   });
+  var tabs = new Tabs({
+    elem: "courierTabs",
+    open: 0
+  });
 
-// })();
+})();

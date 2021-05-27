@@ -1,0 +1,24 @@
+.courier {
+  &__btn {
+    width: 100%;
+    height: 64px;
+    background-color: #333333;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    transition: color 0.2s, background-color 0.2s;
+    border: none;
+    outline: none;
+
+    &.disabled {
+      background-color: #F5F5F5;
+      color: #BABABA;
+      pointer-events: none;
+    }
+  }
+}
